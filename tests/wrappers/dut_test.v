@@ -1,16 +1,15 @@
-module xor_test(
+module dut_test(
 	input wire a,
 	input wire b,
 	output wire y
 );
-xor_gate xor_gate(
-	.a(a),
+	
+dut dut(.a(a),
 	.b(b),
-	.y(y)
-);
+	.y(y));
 
 initial begin
-  $dumpfile("xor.vcd");
+	$dumpfile("dump.vcd");
 	$dumpvars;
 end
 endmodule
