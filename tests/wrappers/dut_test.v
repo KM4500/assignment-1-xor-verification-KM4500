@@ -1,5 +1,4 @@
-module dut_test(
-	input wire a,
+module dut_test(input wire a,
 	input wire b,
 	output wire y
 );
